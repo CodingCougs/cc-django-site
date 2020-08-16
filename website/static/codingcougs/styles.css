@@ -80,3 +80,15 @@ a {
 a:link {
     color: #2b6cb0;
 }
+
+svg {
+    height: 25px;
+    width: 25px;
+    fill: #4299e1;
+    margin-left: 1.5rem;
+}
+
+.about {
+    margin-left: 0.5rem;
+    justify-self: flex-end;
+}

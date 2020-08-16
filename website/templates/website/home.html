@@ -1,14 +1,15 @@
+{% load static %}
 <!DOCTYPE>
 <html>
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'codingcougs/styles.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <main role="main">
         <div class="main-container">
-            <img id="cc-logo" src="CodingCougs.png" alt="Coding Cougs logo">
+            <img id="cc-logo" src="{% static 'codingcougs/CodingCougs.png' %}" alt="Coding Cougs logo">
             <h1>Coding Cougs</h1>
             <small>@ WSU Tricities</small>
             <p>
@@ -18,9 +19,13 @@
             </p>
 
             <div class="discord">
-                <img id="discord-logo" src="discord-logo.svg" alt="Discord logo">
+                <img id="discord-logo" src="{% static 'codingcougs/discord-logo.svg' %} " alt="Discord logo">
                 <a href="https://discord.gg/vGQM255">
                     https://discord.gg/vGQM255
+                </a>
+                <div class="py-1"><svg class="fill-current h-6 w-6 text-teal-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                <a href="{% url 'about' %}" class="about">
+                    About
                 </a>
             </div>
         </div>
